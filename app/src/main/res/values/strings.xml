@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FirstApp</string>
+    <string name="description_text">Home Page</string>
+    <string name="About_me">My name is nirajan who is enthusiastic about coding and tech as well as i have great interest on computer science these days</string>
 </resources>

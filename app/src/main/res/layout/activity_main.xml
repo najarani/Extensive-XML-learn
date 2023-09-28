@@ -1,19 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#8E8787"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    >
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:src="@android:drawable/ic_menu_myplaces"
-        >
+    tools:context=".MainActivity">
 
-    </ImageView>
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:contentDescription="@string/description_text"
+        app:srcCompat="@android:drawable/ic_menu_mapmode" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/About_me"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="12"
+        android:gravity="center|center_vertical"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#421616"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:backgroundTint="#292929"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="Push In"
+        android:textAllCaps="true"
+        android:textColor="#F3F0F0"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>
